@@ -84,7 +84,6 @@ exports.admin = function (req, res, next) {
 
 exports.get_account_details = function(req, res, next) {
 	// Uncomment code below to create vulnerabilities - Code injection
-/*
   // @TODO need to add a database call to get the profile from the database
   // and provide it to the view to display
   const profile = {}
@@ -115,7 +114,6 @@ exports.save_account_details = function(req, res, next) {
     console.log('error in form details')
     return res.render('account.hbs')
   }
-  */
 }
 
 exports.isLoggedIn = function (req, res, next) {
