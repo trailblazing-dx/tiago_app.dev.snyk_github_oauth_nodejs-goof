@@ -35,7 +35,7 @@ exports.index = function (req, res, next) {
 };
 
 exports.loginHandler = function (req, res, next) {
-  // Uncomment code below to create vulnerabilities
+  // Uncomment code below to create vulnerabilities - NoSQL injection
 /*
   if (validator.isEmail(req.body.username)) {
     User.find({ username: req.body.username, password: req.body.password }, function (err, users) {
@@ -83,6 +83,8 @@ exports.admin = function (req, res, next) {
 };
 
 exports.get_account_details = function(req, res, next) {
+	// Uncomment code below to create vulnerabilities - Code injection
+/*
   // @TODO need to add a database call to get the profile from the database
   // and provide it to the view to display
   const profile = {}
@@ -113,6 +115,7 @@ exports.save_account_details = function(req, res, next) {
     console.log('error in form details')
     return res.render('account.hbs')
   }
+  */
 }
 
 exports.isLoggedIn = function (req, res, next) {
